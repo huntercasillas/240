@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filterRecyclerViewLayout"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/background"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp">
+
+        <LinearLayout android:id="@+id/filterHolder"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:layout_margin="7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/filterTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filter Title"
+                android:layout_marginStart="15dp"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/filterSubtitle"
+                android:text="FILTER SUBTITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/filterSwitch"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:thumbTint="@color/colorPrimary"
+            android:trackTint="@color/colorPrimary"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginStart="90dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/filterUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#000000"/>
+
+</LinearLayout>
